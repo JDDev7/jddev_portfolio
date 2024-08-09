@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+    <nav>
+        <a href="#" class="logo"><span>JD</span>Dev</a>
+
+        <ul class="links">
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#experience">Experiencia</a>
+            <a href="#contact">Contacto</a>
+        </ul>
+
+        <i class='bx bx-menu' id="menu"></i>
+
+        <a href="#cv" class="btn" onclick="toggleCvDownload()">Descargar CV</a>
+    </nav>
+    </header>
+    <!-- home section -->
+     <section id="home">
+
+       
+       <div class="info-box">
+        <div class="inline">
+          <img class="avatar" src="assets/avatar.webp" alt="">
+          <h1>¡Hola! Soy <span>Jose Diego </span>"<span>JD</span>Dev" <span>Moreno</span></h1>
+        </div>
+        <h3>Soy <span>Desarrollador Web</span></h3>
+        <p>¡Bienvenido seas a mi portfolio! Aquí podrás conocer más sobre mi, ver mis proyectos, descargar mi CV y contactar conmigo.</p>
+     </div>
+     
+     <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="toggleCvDownload()">&times;</div>
+        <div class="btn"><a href="/assets/CV_2024_José_Diego_Moreno[English].pdf" download="CV_2024_José_Diego_Moreno[English].pdf">English</a></div>
+        <div class="btn"><a href="/assets/CV_2024_José_Diego_Moreno[Spanish].pdf" download="CV_2024_José_Diego_Moreno[Spanish].pdf">Español</a></div>
+      </div>
+    </div>
+     <div class="btn-box">
+        <div class="social-icons">
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+          </div>
+     </div>
+     <a href="#cv" class="btn-phone" onclick="toggleCvDownload()">Descargar CV</a>
+    </section>
+    
+    <!-- projects -->
+    <section id="projects">
+      <h1 class="header"><span>P</span>royectos</h1>
+      <div class="projects-container">
+        <div class="box">
+          <div class="box-text-img">
+            <h1><span>Port</span>folio</h1>
+            <img class="width-max" src="assets/portfolio_web.webp" alt="miniatura del portfolio web">
+            <p>¡Este portfolio! Realizado unicamente con HTML5 CSS3 y JavaScript vanilla.</p>
+          </div>
+          <div class="btn-box-small">
+            <div class="stack-icons-60">
+              <img src="assets/html5.webp" alt="html5 logo">
+              <img src="assets/css3.webp" alt="css3 logo">
+              <img src="assets/javascript.webp" alt="javascript logo">
+            </div>
+            <div class="social-icons-small-40">
+              <a href="#"><i class='bx bxl-github app-btn'></i></a>
+              <a href="#"><i class='bx bx-link app-btn'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text-img">
+          <h1><span>Make</span> Your Combo</h1>
+          <img class="width-max"  src="assets/myc_webapp.webp" alt="miniatura de la aplicación web Make Your Combo">
+          <p>Aplicación web escrita en Python con el framework Reflex y CSS3, antes conocido como Pynecone. Te ayuda a crear anotaciones de combinaciones de botones para juegos de pelea como Tekken 8, Street Fighter 6 o el futuro 2XKO de Riot Games.</p>
+        </div>
+          <div class="btn-box-small">
+            <div class="stack-icons-60">
+              <img src="assets/python.webp" alt="Python Logo">
+              <img src="assets/reflex.webp" alt="Reflex Logo">
+              <img src="assets/css3.webp" alt="css3 logo">
+            </div>
+            <div class="social-icons-small-40">
+                <a href="#"><i class='bx bxl-github app-btn'></i></a>
+                <a href="#"><i class='bx bx-link app-btn'></i></a>
+              </div>
+         </div>
+        </div>
+        <div class="box">
+          <div class="box-text-img">
+          <h1><span>Pass</span>word Generator</h1>
+          <img class="width-max"  src="assets/passgen_web.webp" alt="">
+          <p>Generador de contraseñas hecho con Python, Reflex y CSS3. Tiene la posibilidad de ver la web en inglés y español, Tu eliges la cantidad de caracteres y se te generara en mitad de la pantalla una contraseña aleatoria y segura.</p>
+        </div>
+          <div class="btn-box-small">
+            <div class="stack-icons-60">
+              <img src="assets/python.webp" alt="">
+              <img src="assets/reflex.webp" alt="">
+              <img src="assets/css3.webp" alt="">
+            </div>
+            <div class="social-icons-small-40">
+                <a href="#"><i class='bx bxl-github app-btn'></i></a>
+                <a href="#"><i class='bx bx-link app-btn'></i></a>
+              </div>
+         </div>
+        </div>
+        <div class="box">
+          <div class="box-text-img">
+          <h1><span>Dice</span> Roll App</h1>
+          <img class="width-max"  src="assets/diceapp.webp" alt="">
+          <p>Aplicación creada con Dart y Flutter que permite hacer una tirada de dados de seis caras para dispositivos Android e iOS.</p>
+        </div>
+          <div class="btn-box-small">
+            <div class="stack-icons-60">
+              <img src="assets/dart.webp" alt="">
+              <img src="assets/flutter.webp" alt="">
+            </div>
+            <div class="social-icons-small-40">
+                <a href="#"><i class='bx bxl-github app-btn'></i></a>
+              </div>
+         </div>
+        </div>
+      </div>
+
+    </section>
+
+<!-- about section -->
+    <section id="about">
+      <div class="about-box">
+        <div class="about-info">
+          <h1>Sobre <span>mí</span></h1>
+          <p>Desde siempre estuve interesado en la programación, pero hasta 2020 no empecé a proponerme aprender de forma autodidacta. Desde entonces, he estado buscando aquel lenguaje y lo que realmente quiero desarrollar. El desarrollo web y mobile es lo que mas me entusiasma y es a lo que me quiero dedicar. También me considero una persona curiosa y me encanta mirar y aprender nuevos frameworks.</p>
+        </div>
+
+        <h2><span>H</span>abilidades</h2>
+
+        <div class="skills">
+          <ul>
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> HTML</span>
+            </li>
+
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> CSS</span>
+            </li>
+
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> Javascript</span>
+            </li>
+
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> Python</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> Flutter</span>
+            </li>
+
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> Lua</span>
+            </li>
+
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> Reflex</span>
+            </li>
+
+            <li>
+              <span><i class='bx bxs-chevron-right'></i> Wordpress</span>
+            </li>
+          </ul>
+          <img src="assets/skills.webp" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- experiencia -->
+
+    <section id="experience">
+      <h1 class="header"><span>E</span>xperiencia</h1>
+      <div class="timeline-container">
+          <div class="timeline-item">
+              <div class="timeline-icon">
+                  <i class="fas fa-check"></i>
+              </div>
+              <div class="timeline-content">
+                <h1><span>PC</span>Box</h1>
+                <p>2020</p>
+                  <p>Realizé las prácticas en PCBox, donde tras un curso de reparacion de sistemas microinformáticos, aprendí y ayudé a reparar equipos de clientes. También realicé venta al público como dependiente de la tienda.</p>
+              </div>
+          </div>
+
+          <div class="timeline-item">
+              <div class="timeline-icon">
+                  <i class="fas fa-heart"></i>
+              </div>
+              <div class="timeline-content">
+                  <h1><span>Panorama</span> Web</h1>
+                  <p>2020</p>
+                  <p>Tras el curso de confección y desarrollo web, entré en PANORAMAWEB a realizar las prácticas de empresa, donde ayudé en el desarrollo de webs de clientes con Wordpress, gestioné una tienda con WooCommerce y realizé labores de Community Manager. Al acabar, recibí una carta de recomendación por parte del CEO de la empresa.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- contact -->
+     <section id="contact">
+
+      <h1 class="header"><span>C</span>ontacto</h1>
+
+      <div class="contact-box">
+        <h1>¡Trabajemos juntos!</h1>
+        <h2>Si estás interesado en mi forma de trabajar, no dudes en pulsar el botón de contacto para mandarme un email y lo responderé en la mayor brevedad posible.</h2>
+        <div class="btn"><a href="mailto:jdmorenopulido@gmail.com">Contactar</a></div>
+      </div>
+     </section>
+     
+    <script src="script.js"></script>
+  </body>
+</html>
